@@ -1,12 +1,10 @@
-
-
-
 #!/usr/bin/python
 #
 # Pickle deserialization RCE payload.
 # To be invoked with command to execute at it's first parameter.
 # Otherwise, the default one will be used.
 #
+# From https://gist.github.com/mgeeky/cbc7017986b2ec3e247aab0b01a9edcd
 
 import pickle
 import sys

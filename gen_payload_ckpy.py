@@ -27,9 +27,6 @@ if __name__ == "__main__":
         print(f"Checkpoint file {args.ckpt_file} does not exist.")
         exit(1)
 
-    # Malicious payload class
-
-    # Simulate saving a checkpoint with the malicious payload
     checkpoint = {"model_state_dict": MaliciousCode()}
     torch.save(checkpoint, "malicious_checkpoint.pth")
 
