@@ -51,7 +51,7 @@ class MaliciousPickle:
 
 payload = pickle.dumps(MaliciousPickle())
 pickle.loads(payload) # This will execute the payload and the attacker gains control... 
-I MEAN NUKE YOUR WHOLE FILE SYSTEM... DO NOT ACTUALLY EXECUTE THIS EXAMPLE
+# I MEAN NUKE YOUR WHOLE FILE SYSTEM... DO NOT ACTUALLY EXECUTE THIS EXAMPLE
 ```
 
 ## Mitigations
